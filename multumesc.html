@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="ro">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mulțumim! - Tudor & Anișoara</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body,
+        html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        .thankyou-page {
+            min-height: 100vh;
+            background: url('https://images.unsplash.com/photo-1465495976277-4387d4b0b4c6?w=1600') center/cover no-repeat fixed;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+        }
+
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.75);
+        }
+
+        .content {
+            position: relative;
+            z-index: 1;
+            text-align: center;
+            color: white;
+            padding: 40px;
+            max-width: 900px;
+        }
+
+        h1 {
+            font-size: 52px;
+            font-weight: 600;
+            margin-bottom: 30px;
+        }
+
+        p {
+            font-size: 24px;
+            line-height: 1.8;
+            margin-bottom: 25px;
+        }
+
+        .sad-message {
+            display: none;
+        }
+
+        .signature {
+            font-size: 26px;
+            font-style: italic;
+            margin: 60px 0 50px;
+            opacity: 0.9;
+        }
+
+        .back-btn {
+            display: inline-block;
+            padding: 16px 50px;
+            background: white;
+            color: black;
+            font-weight: 600;
+            font-size: 18px;
+            text-decoration: none;
+            border-radius: 50px;
+            transition: all 0.3s;
+        }
+
+        .back-btn:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.4);
+        }
+
+        .back-btn::before {
+            content: "← ";
+            font-weight: bold;
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 38px;
+            }
+
+            p {
+                font-size: 20px;
+            }
+
+            .content {
+                padding: 30px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="thankyou-page">
+        <div class="overlay"></div>
+        <div class="content">
+            <h1 id="title">Mulțumim frumos!</h1>
+            <p id="happy-message">
+                Ne bucurăm enorm că vei fi alături de noi în această zi specială! ❤️
+            </p>
+            <p id="sad-message" class="sad-message">
+                Ne pare rău că nu poți participa, dar îți mulțumim din suflet că ne-ai anunțat! 🤗
+            </p>
+            <p>Așteptăm cu nerăbdare să împărtășim împreună bucuria acestui moment unic.</p>
+            <div class="signature">
+                Cu multă dragoste,<br>
+                Tudor & Anișoara
+            </div>
+            <a href="index.html" class="back-btn">Înapoi la invitație</a>
+        </div>
+    </div>
+
+    <script>
+        const params = new URLSearchParams(window.location.search);
+        const name = params.get('name');
+        const attending = params.get('attending');
+
+        if (name) {
+            document.getElementById('title').textContent = `Mulțumim, ${name}! ❤️`;
+        }
+
+        if (attending === 'no') {
+            document.getElementById('happy-message').style.display = 'none';
+            document.getElementById('sad-message').style.display = 'block';
+        }
+
+        document.querySelector('.back-btn').addEventListener('click', function (e) {
+            this.href += '?reset=form';
+        });
+    </script>
+</body>
+
+</html>

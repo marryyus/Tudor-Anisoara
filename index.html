@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="ro">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tudor & Anișoara - Invitație la nuntă</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="https://img.freepik.com/premium-vector/couple-getting-married-black-white-icon-young-husband-wife-wedding-symbol-romance_746614-544.jpg?w=1480">
+    
+</head>
+
+<body>
+    <div class="hero-section container">
+        <div class="hero-image">
+            <img src="prinipala.webp"
+                alt="Wedding">
+        </div>
+        <div class="hero-content">
+            <h1>Dragii noștri!</h1>
+            <p>Suntem fericiți să vă invităm la cel mai important eveniment din viața noastră - ziua nunții noastre!
+            </p>
+        </div>
+    </div>
+
+    <div class="cover-section">
+        <div class="wedding-info">
+            <div class="info-item">
+                <strong>Vineri</strong>
+                <span>28 August 2026</span>
+            </div>
+            <div class="info-item">
+                <strong>Ora</strong>
+                <span>17:00</span>
+            </div>
+            <div class="info-item">
+                <strong>Locația</strong>
+                <span>Restaurantul Mi Piace</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="timeline-section">
+        <div class="container">
+            <h2 class="section-title">Programul serii nunții</h2>
+            <p style="display: flex;justify-self: center; margin-bottom:30px; margin-top:-50px">Va fi o seară plină de
+                bucurie, râsete și bineînțeles iubire!</p>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <h3>SOSIRE INVITAȚI</h3>
+                        <p>18:00<br>
+                           Ne întâlnim la Restaurantul Mi Piace pentru un început relaxant. Vă așteptăm cu zâmbete și voie bună, gata să creăm atmosfera perfectă pentru această zi.</p>
+                    </div>
+                    <div class="timeline-dot"></div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <h3>MUZICĂ LIVE</h3>
+                        <p>19:00-01:00<br>
+                            Surorile Osoianu, Valentin Uzun și dansatori captivează publicul cu ritmuri vibrante pe timpul serii</p>
+                    </div>
+                    <div class="timeline-dot"></div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <h3>MOMENT SPECIAL</h3>
+                        <p>01:00<br>
+                            Tortul festiv este tăiat, urmat de DJ pentru petrecere până în zori.​</p>
+                    </div>
+                    <div class="timeline-dot"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="countdown-section">
+        <div class="container">
+            <h2 class="section-title" style="color: white;">Până la nuntă au rămas:</h2>
+            <div class="countdown-boxes">
+                <div class="countdown-box">
+                    <span class="number" id="days">0</span>
+                    <span class="label">zile</span>
+                </div>
+                <div class="countdown-box">
+                    <span class="number" id="hours">0</span>
+                    <span class="label">ore</span>
+                </div>
+                <div class="countdown-box">
+                    <span class="number" id="minutes">0</span>
+                    <span class="label">minute</span>
+                </div>
+                <div class="countdown-box">
+                    <span class="number" id="seconds">0</span>
+                    <span class="label">secunde</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="moodboard-section">
+        <div class="container">
+            <h2 class="section-title">MOODBOARD</h2>
+            <div class="moodboard-subtitle">Palette Inspiration</div>
+            <div class="moodboard-tagline">Ne vom bucura dacă veți ține cont de paleta de culori a evenimentului, atunci
+                când vă alegeți ținuta. Puteți opta pentru oricare din culorile de mai jos</div>
+            <div class="moodboard-tagline">Black, Golden, Chocolate, Olive, Pastel Colours</div>
+            <div class="color-palette-images">
+    <div class="mood-circle">
+        <img src="https://www.adobe.com/uk/express/learn/blog/media_10a238ff0af818947605272a0d92be99b0fa2f42d.jpg?width=1200&format=pjpg&optimize=medium" alt="Black">
+    </div>
+    <div class="mood-circle">
+        <img src="https://img.freepik.com/free-vector/luxury-golden-detailed-background_23-2149078732.jpg?semt=ais_hybrid&w=740&q=80" alt="Golden">
+    </div>
+    <div class="mood-circle">
+        <img src="https://images.stockcake.com/public/2/2/e/22efc06b-6a66-4b25-8f1b-7ba5c9aed026_large/flowing-chocolate-waves-stockcake.jpg" alt="Chocolate">
+    </div>
+    <div class="mood-circle">
+        <img src="https://img.freepik.com/premium-photo/dark-olive-green-background-with-subtle-waves-dark-background-design-dark-texture-wallpaper_1020697-704563.jpg" alt="Olive">
+    </div>
+    <div class="mood-circle">
+        <img src="https://images.stockcake.com/public/f/3/3/f33d8027-4326-4b4f-bc81-66f66a0ad26c_large/dreamy-pastel-waves-stockcake.jpg" alt="Pastel Colours">
+    </div>
+</div>
+        </div>
+    </div>
+
+    <div class="details-section">
+        <div class="container">
+            <h2 class="section-title">DRESSCODE</h2>
+            <div style="text-align: center; font-size: 24px; font-weight: 600; margin-bottom: 40px;">Formal</div>
+
+            <div class="detail-item">
+                <div class="detail-text">
+                    <p>• Doamnelor li se recomandă să aleagă o rochie de seară, o rochie de cocktail sau un costum
+                        elegant.</p>
+                </div>
+            </div>
+
+            <div class="detail-item">
+                <div class="detail-text">
+                    <p>• Bărbaților li se recomandă să poarte un costum elegant cu o cămașă și un sacou în tonuri calme,
+                        discrete.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="details-section" style="padding-top: 0;">
+        <div class="container">
+            <h2 class="section-title">Detalii</h2>
+
+            <div class="detail-item">
+                <div class="detail-text">
+                    <p>Deși iubim florile, știm că nu vom reuși să ne bucurăm de ele în agitație nunții. Dacă doriți
+                        puteți înlocui florile cu o sticluță din băutura voastră preferată. Alegerea vă aparține - cel
+                        mai important e să fiți alături de noi în acesta zi importantă!</p>
+                </div>
+            </div>
+
+
+
+
+        </div>
+    </div>
+
+    <div class="rsvp-section" id="guests" style="text-align: center;">
+        <div class="container">
+            <h2><strong>{{statusMessage}}</strong></h2>
+
+            <form @submit.prevent="submitForm" style="max-width: 600px; margin: 0 auto;">
+                <div class="form-group">
+                    <input type="text" v-model="participants.name" placeholder="Numele tău (sau al familiei)" required>
+                </div>
+
+                <div class="form-group">
+                    <label><strong>Câți adulți vor fi?</strong></label>
+                    <sup v-if="participants.invited_adults > 1">Dacă veniți cu partenerul, alegeți 2 persoane.</sup>
+                    <div class="radio-group">
+                        <label v-for="person in range(0, participants.invited_adults)" :key="'adult-'+person">
+                            <input type="radio" name="adults" :value="person" v-model="participants.confirmed_adults"
+                                required>
+                            <span v-if="person == 0">Nu pot veni</span>
+                            <span v-else-if="person == 1">Numai eu!</span>
+                            <span v-else>Venim {{person}} adulți</span>
+                        </label>
+                    </div>
+                </div>
+
+                <div class="form-group" v-if="participants.invited_children > 0 && participants.confirmed_adults != 0">
+                    <label><strong>Veniți cu copii?</strong></label>
+                    <div class="radio-group">
+                        <label v-for="person in range(0, participants.invited_children)" :key="'child-'+person">
+                            <input type="radio" name="children" :value="person"
+                                v-model="participants.confirmed_children" required>
+                            <span v-if="person == 0">Voi veni fără copii</span>
+                            <span v-else-if="person == 1">Voi veni cu un copil</span>
+                            <span v-else>Voi veni cu {{person}} copii</span>
+                        </label>
+                    </div>
+                </div>
+
+                <div style="text-align: center; margin-top: 30px;">
+                    <button type="submit" class="thankyou-back-btn">
+                        <strong>{{confirmButton}}</strong>
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+
+    
+
+    <footer>
+        <div class="container">
+            <p class="footer-text">Așteptăm cu nerăbdare să vă revedem la sărbătoarea noastră!</p>
+            <p class="signature">Cu dragoste,<br>Tudor & Anișoara</p>
+            <p class="copyright">Creat și dezvoltat de <a href="https://linktr.ee/marryyus">M.C. </a>© 2025 - 2026 Toate
+                drepturile sunt rezervate</p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>

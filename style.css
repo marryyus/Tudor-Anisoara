@@ -22,7 +22,6 @@ body {
   align-items: center;
   padding: 60px 20px;
   gap: 40px;
-  /* height: 99vh; */
 }
 
 .hero-image {
@@ -31,10 +30,10 @@ body {
 }
 
 .hero-image img {
-  height: 80vh;           /* mai mic decât 90vh ca să nu împingă textul */
+  height: 80vh;          
   object-fit: cover;
   opacity: 0;
-  transform: scale(1.04); /* zoom foarte mic la start */
+  transform: scale(1.04); 
   animation: heroImg 1.4s ease forwards;
 }
 
@@ -514,7 +513,7 @@ footer .logo {
 @media (max-width: 768px) {
   .hero-section {
     flex-direction: column;
-    height: auto;      /* pe mobil lăsăm secțiunea să crească natural */
+    height: auto;     
   }
 
   .hero-image img {

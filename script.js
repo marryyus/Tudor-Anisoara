@@ -111,30 +111,30 @@ new Vue({
     }
 });
 
-const autoRevealElements = document.querySelectorAll(`
-    .hero-section,
-    .cover-section,
-    .timeline-section,
-    .timeline-item,
-    .countdown-section,
-    .moodboard-section,
-    .mood-circle,
-    .details-section,
-    .detail-item,
-    .rsvp-section,
-    footer
-`);
+// const autoRevealElements = document.querySelectorAll(`
+//     .hero-section,
+//     .cover-section,
+//     .timeline-section,
+//     .timeline-item,
+//     .countdown-section,
+//     .moodboard-section,
+//     .mood-circle,
+//     .details-section,
+//     .detail-item,
+//     .rsvp-section,
+//     footer
+// `);
 
-const revealOnScroll = () => {
-    const trigger = window.innerHeight * 0.85;
+// const revealOnScroll = () => {
+//     const trigger = window.innerHeight * 0.85;
 
-    autoRevealElements.forEach(el => {
-        const top = el.getBoundingClientRect().top;
-        if (top < trigger) {
-            el.classList.add('revealed');
-        }
-    });
-};
+//     autoRevealElements.forEach(el => {
+//         const top = el.getBoundingClientRect().top;
+//         if (top < trigger) {
+//             el.classList.add('revealed');
+//         }
+//     });
+// };
 
-window.addEventListener('scroll', revealOnScroll);
-window.addEventListener('load', revealOnScroll);
+// window.addEventListener('scroll', revealOnScroll);
+// window.addEventListener('load', revealOnScroll);
